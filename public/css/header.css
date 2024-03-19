@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+  padding: 10px;
+  margin: 0px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-right: 45px;
+}
+
+.nav-item a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  transition: color 0.2s ease;
+}
+
+#logo-header {
+  margin: 33px;
+  margin-right: 33px;
+  width: 100px;
+  height: 100px;
+  margin-right: 45px;
+}
+
+/*
+.nav-item a:hover {
+  color: #2fd44d;
+}
+*/
+
+.funciones a:hover{
+
+  color: #2fd44d;
+}
+
+.perfil a:hover{
+
+  color:rgb(27, 126, 255);
+}
+
+.cerrar a:hover{
+
+  color:red;
+}
+
+
+.navbar-right a {
+  background-color: #ff6700;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  transition: background-color 0.2s ease;
+}
+
+.navbar-right a:hover {
+  background-color: #cc5500;
+}
+
+footer{
+  background-color: #212121;
+  color:white;
+  position: relative;
+  padding-bottom: 0;
+  margin: 0;
+  min-height: 50vh;
+  margin-top: 20vh;
+  box-sizing: border-box;
+}
+
+#footer-funciones a{
+
+  color: rgb(135, 135, 135);
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+#footer-funciones a:hover{
+
+  color: #2fd44d;
+  transition: color 0.5s ease;
+}
+
+#footer-funciones{
+
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 50px;
+  list-style: none;
+  font-size: 20px;
+}
+
+#footer-redes{
+
+  position: absolute;  
+  font-size:50px;
+  list-style: none;
+  margin-left: 1200px;
+  padding-top: 50px;
+  display: flex;
+}
+
+#footer-redes li{
+
+  margin-right: 15px;
+}
+
+#footer-redes a{
+
+  color: rgb(135, 135, 135);
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+#instagram:hover{
+
+  color: purple;
+  transition: color 0.5s ease;
+}
+
+#facebook:hover{
+
+  color:rgb(27, 126, 255);
+  transition: color 0.5s ease;
+}
+
+#twitter:hover{
+
+  color:#1D9BF0;
+  transition: color 0.5s ease;
+}
+
+
+

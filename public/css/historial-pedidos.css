@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+    font-family: "Poppins";
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    grid-template-rows: repeat(2, 200px);
+    gap: 17px;
+    justify-content: center; /* Alinea los elementos horizontalmente en el centro */
+}
+  
+  .grid-item {
+    background-image: url('/img/pagina.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Poppins";
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.75);
+    overflow: auto; /* Permite que el contenido desbordado sea visible y se ajuste a la altura especificada */
+  }

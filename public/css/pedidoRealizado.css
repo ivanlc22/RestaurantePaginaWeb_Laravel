@@ -1,0 +1,21 @@
+
+.compra-realizada
+{
+    font-family: "Poppins";
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+.icon 
+{
+    text-decoration: none;
+    font-size: 50px;
+    color: rgb(23, 112, 23);
+    margin: 65px;
+}
+
+.icon:hover
+{
+    color:rgb(57, 202, 57)
+}

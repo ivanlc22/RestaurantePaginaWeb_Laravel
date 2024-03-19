@@ -1,0 +1,334 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.alert{
+  position: absolute;
+  padding: 10px;
+  margin-left: 25px;
+  width: 350px;
+  background-color: rgba(237, 120, 120, 0.571);
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1000px 1fr; /* Altura fija para la primera fila y espacio restante para la segunda */
+  gap: 20px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+#categoria {
+  height: 100%;
+  margin-top: 20px;
+  width: 60%;
+  justify-self: end;
+}
+
+#categoria a {
+  color: #000000;
+  text-decoration: none;
+}
+
+#categoria ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#categoria li a {
+  display: block;
+  width: 100%;
+}
+
+#categoria li {
+  padding: 10px;
+  border-radius: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+#categoria li:hover {
+  color: black;
+  background-color: #44c95a;
+  transform: translateY(-5px);
+}
+
+#categoria li.active {
+  color: black;
+  background-color: #333;
+  color: #fff;
+}
+
+#categoria li.active:hover {
+  color: black;
+  background-color: #333;
+  transform: none;
+}
+
+a:hover {
+  color: #051a09;
+  transition: color 0.5s ease;
+}
+
+.productos {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  grid-column-gap: 20px; 
+  grid-row-gap: 20px;
+  height: 100%;
+  width: 100%;
+  margin-right: 20px;
+  margin-top: 25px; 
+}
+
+.producto.menu,
+.producto.bebida,
+.producto.principal,
+.producto.entrante,
+.producto.postre {
+  width: 20%; 
+  height: 12%;
+  display: inline-block;
+}
+
+.productos .item {
+  border-radius: 10px;
+  padding: 1em; 
+  box-shadow: 5px 10px 5px 5px rgb(192, 191, 191);
+  text-align: center;
+  height: 350px;
+  width: 300px;
+}
+
+.productos img {
+  position: relative;
+  width: 250px;
+  height: 175px;
+  border-radius: 10px;
+}
+
+.productos .details {
+  display: flex;
+  height: 30px;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.productos h5 {
+  width: 200px;
+  margin-right: -50px;
+}
+
+.productos .price {
+  margin-left: 140px; 
+}
+
+.buybutton {
+  font-family: "Poppins";
+  position: relative; 
+  justify-content: center;
+  align-items: center;
+    margin-top: 20px;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 168px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 14px 18px;
+    color: #fff;
+    background-color: #15883e;
+    height: 62px;
+    width: 243px;
+}
+
+.buybutton:hover {
+  background-color: #1db954;
+}
+
+.specialbutton {
+  margin-top: 40px; 
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color,border-color,color,box-shadow,filter;
+  transition-duration: .3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 160px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 16px 14px 18px;
+  color: #fff;
+  background-color: #15883e;
+  height: 48px;
+}
+
+.specialbutton:hover {
+  background-color: #1db954;
+}
+
+.carrito {
+  position: sticky;
+  height: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 0;
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.carrito .carrito-titulo {
+  text-align: center;
+  border: 3px solid transparent;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin-top: -3px;
+}
+
+.carrito .carrito-titulo {
+  position: relative;
+  bottom: 50px; 
+  text-align: center;
+  border: 3px solid; 
+  background-color: black; /* Añadir relleno negro */
+  color: white; /* Cambiar color de texto a blanco */
+  padding: 10px; /* Añadir relleno interno */
+  margin-top: -3px; /* Añadir margen negativo */
+  border: 3px solid transparent; /* Eliminar borde superior */
+}
+
+.main-hr {
+  width: 30%;
+  border: none;
+  border-top: 1px solid #c3c3c3;
+}
+.icon-btn {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #cdcdcd;
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  transition: width 0.2s ease-in-out;
+}
+.add-btn:hover {
+  width: 120px;
+}
+.add-btn::before,
+.add-btn::after {
+  transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 10px;
+  top: calc(50% - 2px);
+  background: red;
+}
+.add-btn::after {
+  right: 14px;
+  overflow: hidden;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.add-btn::before {
+  left: 14px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.icon-btn:focus {
+  outline: none;
+}
+.btn-txt {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.add-btn:hover::before,
+.add-btn:hover::after {
+  width: 4px;
+  border-radius: 2px;
+}
+.add-btn:hover .btn-txt {
+  opacity: 1;
+}
+.add-icon::after,
+.add-icon::before {
+  transition: all 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 2px;
+  top: calc(50% - 10px);
+  background: red;
+  overflow: hidden;
+}
+.add-icon::before {
+  left: 22px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.add-icon::after {
+  right: 22px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.add-btn:hover .add-icon::before {
+  left: 15px;
+  height: 4px;
+  top: calc(50% - 2px);
+}
+.add-btn:hover .add-icon::after {
+  right: 15px;
+  height: 4px;
+  top: calc(50% - 2px);
+}
+
+.carrito-producto {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
+}
+
+.carrito-precio-producto {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.inline {
+  display: inline-block
+}
+
+#producto-carrito {
+  display: inline-block;
+}
+
+#btn-mas {
+  display: inline-block;
+}
+
+#btn-menos {
+  display: inline-block;
+}
+
+#cantidad {
+  display: inline-block;
+}

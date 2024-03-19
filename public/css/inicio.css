@@ -1,0 +1,54 @@
+.semana-tematica{
+    position: relative;
+    background-image: url('/img/ramen.jpeg');
+    background-size: cover;
+    height: 500px;
+}
+
+h1{
+
+    color: #212121;
+    text-align: center;
+}
+
+.texto-tematico{
+    background-color: #eefcffcf;
+    color: black;
+    font-family: "Poppins";
+    font-size: 14px;
+    position: absolute;
+    width: 857px;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+.franja-negra{
+    height: 500px;
+    color: white;
+    background-color: #212121;
+    overflow: auto;
+    font-family: 'Poppins';
+    font-size: 16px;
+}
+
+.franja-negra img{
+
+    float: left;
+    height: 100%;
+}
+
+.texto-knekro{
+
+    padding: 18px;
+    margin-left: 500px;
+    margin-top: 20px;
+}
+
+.texto-knekro h1{
+    
+    text-align: left;
+    color:white;
+}
